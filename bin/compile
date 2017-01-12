@@ -44,7 +44,7 @@ curl --retry 3 --silent --location $JVM_COMMON_BUILDPACK | tar xzm -C /tmp/jvm-c
 . /tmp/jvm-common/bin/util
 . /tmp/jvm-common/bin/java
 #rishi
-JDK_URL_1_8="http://9.26.177.12/s390x/buildpacks/openjdk-1.8.0.tar.gz"
+JDK_URL_1_8="http://9.26.155.191/s390x/buildpacks/openjdk-1.8.0.tar.gz"
 install_java_with_overlay ${BUILD_DIR}
 
 export GRADLE_OPTS=${GRADLE_OPTS-"-Dorg.gradle.daemon=false"}
